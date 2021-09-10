@@ -6,8 +6,21 @@ body{
 
 h1,h2,h3,h4,h5,figcaption,a,p{
     color: white;
+   /* font-size: 1.5vw;*/
 }
-
+/* Resizing */
+h1{
+    font-size: 3vw;
+}
+p{
+    font-size: 1.3vw;
+}
+a{
+    font-size: 1.3vw;
+}
+h3{
+    font-size: 1.4vw;
+}
 .logoImg{
     width: 7%;
     height: 7%;
@@ -50,6 +63,8 @@ h1,h2,h3,h4,h5,figcaption,a,p{
 .pfeilKontakt{
     width: 25%;
     height: 45%;
+    padding-left: 3%;
+    padding-top: 3%;
 }
 .pfeilKontakt:hover{
     margin-left: 5%;
@@ -72,9 +87,6 @@ h1,h2,h3,h4,h5,figcaption,a,p{
     text-align: center;
 }
 
-zdjeciaTop{
-    background-color: white;
-}
 .partnerText{
     text-align: left;
     padding-right: 32%;
@@ -134,7 +146,7 @@ zdjeciaTop{
 }
 
 .kontaktTitle{
-    font-size: 4em;
+    font-size: 5.1vw;
     letter-spacing: 0.12em;
     text-align: center;
 }
@@ -167,7 +179,7 @@ zdjeciaTop{
 }
 .btnMail{
     width: 60%;
-    padding: 3% 3% 4% 10%;
+    padding: 2% 3% 2% 10%;
 }
 .imgMail{
     height: 15%;
@@ -199,6 +211,7 @@ zdjeciaTop{
 }
 input[type=text] {
     width: 180px;
+    font-size: 1vw;
 }
 .footer{
     margin: 1%;
@@ -230,6 +243,15 @@ input[type=text] {
 }
 @media only screen and (max-width: 800px) {
     input[type=text] {
-        width: 100px;
+        width: 70px;
+    }
+    .btnMail{
+        width: 40%;
+        padding: 2% 0% 2% 6%;
+
+    }
+    .btnKontakt{
+        margin-left: 73%;
+        padding-bottom: 0.5%;
     }
 }
