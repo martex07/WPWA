@@ -1,0 +1,235 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-style: italic;
+}
+
+h1,h2,h3,h4,h5,figcaption,a,p{
+    color: white;
+}
+
+.logoImg{
+    width: 7%;
+    height: 7%;
+    /*padding-left: 10%;*/
+    padding-right: 1.5%;
+}
+.itroductionContainer{
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 14%;
+    padding-right: 14%;
+    position: relative;
+    align-items: center;
+}
+.btn{
+    border-color: white;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    display: inline-block;
+}
+.btnKontakt{
+    margin-left: 76%;
+    letter-spacing: 0.12em;
+    padding-bottom: 0.5%;
+}
+.btnServices{
+    margin-left: 28%;
+}
+.btnReferenzen{
+    margin-left: 36%;
+}
+.btnBlog{
+    margin-left: 46%;
+}
+.btnAgentur{
+    margin-left: 52.5%;
+}
+.pfeilKontakt{
+    width: 25%;
+    height: 45%;
+}
+.pfeilKontakt:hover{
+    margin-left: 5%;
+}
+.navButton{
+    position: absolute;
+}
+.unterTitle{
+    margin-top: 10%;
+    margin-bottom: 0%;
+}
+.title{
+    margin-top: 1%;
+}
+.heading{
+    padding: 0% 9% 3% 9%;
+}
+.introduction{
+    padding: 0% 23%;
+    text-align: center;
+}
+
+zdjeciaTop{
+    background-color: white;
+}
+.partnerText{
+    text-align: left;
+    padding-right: 32%;
+    padding-left: 22%;
+    padding-bottom: 2%;
+}
+/*  Images with backgrounds */
+.redBackground{
+    background: linear-gradient(214deg, rgba(46,37,99,1) 0%, rgba(254,62,65,1) 100%);
+
+}
+.greenBackground{
+    background: linear-gradient(214deg, rgba(1,167,251,1) 0%, rgba(181,250,91,1) 100%);
+
+}
+.orangeBackground {
+    background: linear-gradient(214deg, rgba(238, 63, 60, 1) 0%, rgba(255, 189, 11, 1) 100%);
+}
+#right{
+    text-align: right;
+    padding-right: 1%;
+}
+#left{
+    text-align: left;
+}
+.blueBackground{
+    background: linear-gradient(214deg, rgba(61,52,139,1) 0%, rgba(0,164,249,1) 100%);
+    margin-left: 1%;
+}
+.pfeilMiddleContainer{
+    height: 5%;
+    width: 10%;
+    padding-left: 3%;
+}
+.containerMiddle{
+    display: flex;
+    padding:0% 16% 0% 16%;
+}
+
+.imgBackground{
+    padding: 14%;
+    width: 60%;
+    height: 26%;
+    overflow: hidden;
+}
+.imgTitleBelow{
+    text-align: left;
+    padding: 0 10% 0 16%;
+}
+.imgTitleBelowLeft {
+    text-align: left;
+    padding: 0 21% 0 5%;
+}
+/* Kontakt Container */
+.kontaktContainer{
+    padding: 5% 10% 10% 10%;
+}
+
+.kontaktTitle{
+    font-size: 4em;
+    letter-spacing: 0.12em;
+    text-align: center;
+}
+
+.kontaktBelow{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    padding-left: 28%;
+}
+
+.kontaktExtraMargin{
+    margin-top: 5%;
+}
+.mailLine{
+    display: flex;
+    align-items: center;
+}
+.kontakTel{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+.paddingToMail{
+    padding-right: 10%;
+}
+.imgTextMail{
+    display: flex;
+    align-items: center;
+}
+.btnMail{
+    width: 60%;
+    padding: 3% 3% 4% 10%;
+}
+.imgMail{
+    height: 15%;
+    width: 25%;
+    padding-right: 2%;
+}
+
+.mailUs{
+    letter-spacing: 0.1em;
+}
+
+/* Footer */
+.verticalLine{
+    border-left: 1px solid gray;
+}
+.footerContainer{
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 14%;
+    padding-right: 14%;
+    position: relative;
+
+}
+.searchIcon{
+    background-image: url('images/Search.svg');
+    background-repeat: no-repeat;
+    padding: 1% 1% 1% 15%;
+}
+input[type=text] {
+    width: 180px;
+}
+.footer{
+    margin: 1%;
+    text-align: left;
+    padding-left: 50%;
+}
+.footerRight{
+    position: absolute;
+    padding-left: 54%;
+}
+.horizontalLine{
+    border-bottom: 1px solid gray;
+}
+.textBelowSearch{
+    margin-right: 0.5em;
+    text-align: left;
+}
+.footerTextBelow{
+    padding-left: 0%;
+}
+.socialMedia{
+    height: 25%;
+    width: 10%;
+    position: absolute;
+    padding-left: 26.5%;
+}
+.grayFooter{
+    color: gray;
+}
+@media only screen and (max-width: 800px) {
+    input[type=text] {
+        width: 100px;
+    }
+}
