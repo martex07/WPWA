@@ -244,6 +244,45 @@ input[type=text] {
     color: gray;
 }
 @media only screen and (max-width: 768px) {
+    .introduction{
+        padding: 0% 2% ;
+    }
+    .heading{
+        padding: 0% ;
+    }
+    .logoImg{
+        padding-left: 2%;
+    }
+    .itroductionContainer{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .grafikDiagram{
+       width: 80%;
+    }
+    .partnerText{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .containerMiddle{
+        padding: 0%;
+    }
+    .kontaktContainer{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .kontaktBelow{
+        padding-left: 26%;
+    }
+    .footerContainer{
+        padding-left: 2%;
+    }
+    .footerRight{
+        padding-left: 80%;
+    }
+    .socialMedia{
+        padding-left: 51%;
+    }
     .navButton{
         display: none;
     }
@@ -253,13 +292,21 @@ input[type=text] {
     .logoImg{
         z-index: 2;
     }
-    /* Copy Start */
-    body
-    {
-        margin: 0;
-        padding: 0;
-        padding-left: 10%;
+    .btnKontaktHamburger{
+        border-color: white;
+        border-radius: 20px;
+        background-color: transparent;
+        color: white;
+        display: inline-block;
+        position: relative;
     }
+    .btnKontaktUnder{
+        padding-bottom: 2%;
+        letter-spacing: 0.12em;
+        /*padding-bottom: 0.5%;*/
+    }
+    /* Copy Start */
+
 
     #menuToggle
     {
@@ -281,11 +328,10 @@ input[type=text] {
         transition: color 0.3s ease;
     }
 
-    #menuToggle button:hover
+    #menuToggle button:focus
     {
-        background-color: tomato;
+        background-color: #ff3f41;
     }
-
 
     #menuToggle input
     {
@@ -374,9 +420,9 @@ input[type=text] {
     #menu
     {
         position: absolute;
-        width: 1400%;
-        margin: -100px 0 0 -50px;
-        padding: 50px;
+        width: 1600%;
+        margin: -60px;
+        padding: 90px;
         padding-top: 125px;
 
         background: black;
@@ -385,7 +431,7 @@ input[type=text] {
         /* to stop flickering of text in safari */
 
         transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
+        transform: translate(-1000%, 0);
 
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     }
