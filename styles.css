@@ -304,9 +304,6 @@ input[type=text] {
         letter-spacing: 0.12em;
         /*padding-bottom: 0.5%;*/
     }
-   .containerMiddle{
-      display: block;
-   }
     /* Copy Start */
     #menuToggle
     {
@@ -511,4 +508,7 @@ input[type=text] {
     input[type=text] {
         width: 90%;
     }
+}
+@media only screen and (max-width: 480px) {
+
 }
