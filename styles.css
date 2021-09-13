@@ -108,11 +108,11 @@ h3{
     background: linear-gradient(214deg, rgba(238, 63, 60, 1) 0%, rgba(255, 189, 11, 1) 100%);
 }
 #right{
-    text-align: right;
-    padding-right: 1%;
+    text-align: left;
 }
 #left{
-    text-align: left;
+    text-align: right;
+    padding-right: 1%;
 }
 .blueBackground{
     background: linear-gradient(214deg, rgba(61,52,139,1) 0%, rgba(0,164,249,1) 100%);
@@ -202,7 +202,6 @@ h3{
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 14%;
-    padding-right: 14%;
     position: relative;
 
 }
@@ -305,9 +304,10 @@ input[type=text] {
         letter-spacing: 0.12em;
         /*padding-bottom: 0.5%;*/
     }
+   .containerMiddle{
+      display: block;
+   }
     /* Copy Start */
-
-
     #menuToggle
     {
         display: block;
@@ -461,6 +461,43 @@ input[type=text] {
     .btnKontakt{
         margin-left: 73%;
         padding-bottom: 0.5%;
+    }
+}
+@media only screen and (min-width: 1260px) {
+    .itroductionContainer{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+    .btnServices{
+        margin-left: 38%;
+    }
+    .btnReferenzen{
+        margin-left: 46%;
+    }
+    .btnBlog{
+        margin-left: 56%;
+    }
+    .btnAgentur{
+        margin-left: 62.5%;
+    }
+    .introduction{
+        padding: 0 13%;
+    }
+    .partnerText {
+        padding-right: 12%;
+        padding-left: 12%;
+    }
+    .containerMiddle {
+        padding: 0% 4% 0% 4%;
+    }
+    .footerContainer {
+        padding-left: 4%;
+    }
+    .footerRight {
+        padding-left: 74%;
+    }
+    .socialMedia {
+        padding-left: 46%;
     }
 }
 
