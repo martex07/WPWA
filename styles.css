@@ -18,7 +18,7 @@ p{
     font-size: 1.3vw;
 }
 a{
-    font-size: 1.3vw;
+    font-size: 1.8vw;
 }
 h3{
     font-size: 1.4vw;
@@ -50,6 +50,10 @@ h3{
     letter-spacing: 0.12em;
     /*padding-bottom: 0.5%;*/
 }
+.kontaktFont{
+    font-style: italic;
+    font-family: Times;
+}
 .btnServices{
     margin-left: 28%;
 }
@@ -76,16 +80,16 @@ h3{
 }
 .unterTitle{
     margin-top: 10%;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 .title{
     margin-top: 1%;
 }
 .heading{
-    padding: 0% 9% 3% 9%;
+    padding: 0 9% 3% 9%;
 }
 .introduction{
-    padding: 0% 23%;
+    padding: 0 23%;
     text-align: center;
 }
 
@@ -107,12 +111,12 @@ h3{
 .orangeBackground {
     background: linear-gradient(214deg, rgba(238, 63, 60, 1) 0%, rgba(255, 189, 11, 1) 100%);
 }
-#right{
-    text-align: left;
-}
-#left{
+.right{
     text-align: right;
-    padding-right: 1%;
+    padding-right: 0.5%;
+}
+.left{
+    text-align: left;
 }
 .blueBackground{
     background: linear-gradient(214deg, rgba(61,52,139,1) 0%, rgba(0,164,249,1) 100%);
@@ -120,12 +124,12 @@ h3{
 }
 .pfeilMiddleContainer{
     height: 5%;
-    width: 10%;
+    width: 7%;
     padding-left: 3%;
 }
 .containerMiddle{
     display: flex;
-    padding:0% 16% 0% 16%;
+    padding:0 16% 0 16%;
 }
 
 .imgBackground{
@@ -180,7 +184,7 @@ h3{
     align-items: center;
 }
 .btnMail{
-    width: 60%;
+    width: 90%;
     padding: 2% 3% 2% 10%;
 }
 .imgMail{
@@ -231,7 +235,7 @@ input[type=text] {
     text-align: left;
 }
 .footerTextBelow{
-    padding-left: 0%;
+    padding-left: 0;
 }
 .socialMedia{
     height: 25%;
@@ -242,19 +246,19 @@ input[type=text] {
 .grayFooter{
     color: gray;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .introduction{
-        padding: 0% 2% ;
+        padding: 0 2% ;
     }
     .heading{
-        padding: 0% ;
+        padding: 0 ;
     }
     .logoImg{
         padding-left: 2%;
     }
     .itroductionContainer{
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .grafikDiagram{
        width: 80%;
@@ -264,11 +268,11 @@ input[type=text] {
         padding-right: 2%;
     }
     .containerMiddle{
-        padding: 0%;
+        padding: 0;
     }
     .kontaktContainer{
-        padding-left: 0%;
-        padding-right: 0%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .kontaktBelow{
         padding-left: 26%;
@@ -374,12 +378,12 @@ input[type=text] {
 
     #menuToggle span:first-child
     {
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
     }
 
     #menuToggle span:nth-last-child(2)
     {
-        transform-origin: 0% 100%;
+        transform-origin: 0 100%;
     }
 
     /*
@@ -427,7 +431,7 @@ input[type=text] {
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
 
-        transform-origin: 0% 0%;
+        transform-origin: 0 0;
         transform: translate(-1000%, 0);
 
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -451,8 +455,8 @@ input[type=text] {
         width: 70px;
     }
     .btnMail{
-        width: 40%;
-        padding: 2% 0% 2% 6%;
+        width: 60%;
+        padding: 2% 0 2% 6%;
 
     }
     .btnKontakt{
@@ -460,32 +464,35 @@ input[type=text] {
         padding-bottom: 0.5%;
     }
 }
-@media only screen and (min-width: 1260px) {
+@media only screen and (max-width: 1700px) {
     .itroductionContainer{
         padding-right: 4%;
         padding-left: 4%;
     }
     .btnServices{
-        margin-left: 38%;
+        margin-left: 41%;
     }
     .btnReferenzen{
-        margin-left: 46%;
+        margin-left: 50%;
     }
     .btnBlog{
-        margin-left: 56%;
+        margin-left: 61.5%;
     }
     .btnAgentur{
-        margin-left: 62.5%;
+        margin-left: 68.5%;
+    }
+    .btnKontakt{
+        padding-bottom: 0.5%;
     }
     .introduction{
-        padding: 0 13%;
+        padding: 0 6%;
     }
     .partnerText {
-        padding-right: 12%;
+        padding-right: 28%;
         padding-left: 12%;
     }
     .containerMiddle {
-        padding: 0% 4% 0% 4%;
+        padding: 0;
     }
     .footerContainer {
         padding-left: 4%;
@@ -498,17 +505,31 @@ input[type=text] {
     }
 }
 
-@media only screen and (min-width: 1700px) {
-    .btnMail{
-        width: 90%;
-    }
-    body{
-        resize: none;
-    }
-    input[type=text] {
-        width: 90%;
-    }
-}
 @media only screen and (max-width: 480px) {
+    .kontaktTitle{
+        font-size: xx-large;
+    }
+    h3{
+        font-size: large;
+    }
+    .mailLine{
+        display: inline;
+    }
+    a{
+        font-size: large;
+    }
+    .btnMail{
+        padding: 0;
+        padding-left: 4%;
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+
+    .logoImg{
+        width: 90px;
+        height: auto;
+        padding: 5% 3%;
+    }
 
 }
