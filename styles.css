@@ -1,7 +1,8 @@
 body{
     background-color: black;
-    margin: 0;
+    margin: 0 auto;
     font-style: italic;
+    max-width: 1700px;
 }
 #menuToggle{
     display: none;
@@ -10,22 +11,10 @@ h1,h2,h3,h4,h5,figcaption,a,p{
     color: white;
    /* font-size: 1.5vw;*/
 }
-/* Resizing */
-h1{
-    font-size: 3vw;
-}
-p{
-    font-size: 1.3vw;
-}
-a{
-    font-size: 1.3vw;
-}
-h3{
-    font-size: 1.4vw;
-}
+
 .logoImg{
-    width: 7%;
-    height: 7%;
+    width: 70px;
+    height: 70px;
     /*padding-left: 10%;*/
     padding-right: 1.5%;
 }
@@ -46,9 +35,9 @@ h3{
     display: inline-block;
 }
 .btnKontakt{
-    margin-left: 76%;
+    margin-left: 71%;
     letter-spacing: 0.12em;
-    /*padding-bottom: 0.5%;*/
+    padding-bottom: 0.5%;
 }
 .btnServices{
     margin-left: 28%;
@@ -107,12 +96,12 @@ h3{
 .orangeBackground {
     background: linear-gradient(214deg, rgba(238, 63, 60, 1) 0%, rgba(255, 189, 11, 1) 100%);
 }
-#right{
-    text-align: left;
-}
-#left{
+.right{
     text-align: right;
     padding-right: 1%;
+}
+.left{
+    text-align: left;
 }
 .blueBackground{
     background: linear-gradient(214deg, rgba(61,52,139,1) 0%, rgba(0,164,249,1) 100%);
@@ -212,7 +201,6 @@ h3{
 }
 input[type=text] {
     width: 90%;
-    font-size: 1vw;
 }
 .footer{
     margin: 1%;
@@ -222,6 +210,10 @@ input[type=text] {
 .footerRight{
     position: absolute;
     padding-left: 54%;
+}
+.footerLink{
+    position: relative;
+    display: flex;
 }
 .horizontalLine{
     border-bottom: 1px solid gray;
@@ -451,7 +443,7 @@ input[type=text] {
         width: 70px;
     }
     .btnMail{
-        width: 40%;
+        width: 60%;
         padding: 2% 0% 2% 6%;
 
     }
@@ -501,6 +493,7 @@ input[type=text] {
 @media only screen and (min-width: 1700px) {
     .btnMail{
         width: 90%;
+        padding: 2% 2% 2% 28%
     }
     body{
         resize: none;
@@ -508,7 +501,81 @@ input[type=text] {
     input[type=text] {
         width: 90%;
     }
+    .socialMedia {
+        padding-left: 53%;
+    }
+}
+@media only screen and (max-width: 835px){
+    .btnAgentur{
+        margin-left: 51%;
+    }
+    .btnKontakt{
+        margin-left: 68%;
+    }
 }
 @media only screen and (max-width: 480px) {
+
+    .mailLine{
+        display: block;
+    }
+    .btnMail{
+        margin-left: 29%;
+        margin-top: 10%;
+        padding: 0;
+        padding-left: 10%;
+        width: 40%;
+    }
+    .containerMiddle{
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right:auto;
+
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .right{
+        padding-right: 0;
+        text-align: center;
+    }
+    .left{
+        text-align: center;
+    }
+    .imgTitleBelowLeft {
+        padding: 0 10% 0 10%;
+    }
+    .imgTitleBelow{
+        padding: 0 10% 0 10%;
+    }
+    .footerContainer{
+        display: block;
+        padding-bottom: 50%;
+    }
+    .logoImg{
+        padding-right: 3%;
+    }
+    .footerLink{
+        padding-left: 20%;
+        padding-top: 10%;
+    }
+    .footerRight{
+        padding-left: 10%;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    input[type=text] {
+        width: 200px;
+    }
+    .searchIcon {
+        padding: 1% 19% 1% 13%;
+    }
+    .grayFooter{
+        text-align: center;
+    }
+    .socialMedia{
+        padding: 0;
+        width: auto;
+        height: 40px;
+    }
 
 }
